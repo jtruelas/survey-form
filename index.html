@@ -7,6 +7,54 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
-</body>
+    <h1 id="title">PPH Feedback Survey</h1>
+    <p id="description">
+      Thank you for taking the time to fill out the following survey. If you could rate our services and provide any additional feedback on how to better serve you and your store, it would be greatly appreciated.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">Name (required):</label>
+        <input id="name" name="name" type="text" placeholder="Ex. John Doe" required/><br>
+        <label id="email-label" for="email">Email (required):</label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" required/><br>
+        <label id="number-label" for="number">Number of stores:</label>
+        <input id="number" name="store-number" type="number" placeholder=1 min=1 max=5 />
+      </fieldset>
+      <fieldset>
+        <legend>Ratings</legend>
+        <label for="dropdown">Print Quality:</label>
+        <select id="dropdown">
+          <option value="poor">Poor</option>
+          <option value="good">Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+        <label for="customer-service">Customer Service</label>
+        <select id="customer-service">
+          <option value="poor">Poor</option>
+          <option value="good">Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select> 
+      </fieldset>
+      <fieldset>
+        <legend>Would You Refer Us?</legend>
+        <label for="yes-option">Yes</label>
+        <input id="yes-option" name="referal" value="yes" type="radio"/>
+        <label for="no-option">No</label>
+        <input id="no-option" name="referal" value="no" type="radio"/>
+      </fieldset>
+      <fieldset>
+        <legend>Desired Products Offerings:</legend>
+        <label for="frame">Frames</label>
+        <input id="frame" name="frame" value="frame" type="checkbox"/>
+        <label for="sticker">Stickers</label>
+        <input id="sticker" name="sticker" value="sticker" type="checkbox"/>
+        <label for="stretched-canvas">Stretched Canvas</label>
+        <input id="stretched-canvas" name="stretched-canvas" value="stretched-canvas" type="checkbox"/>
+      </fieldset>
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" rows=10 cols=30></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
 </html>
